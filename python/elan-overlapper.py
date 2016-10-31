@@ -4,12 +4,6 @@ import argparse
 from sys import stderr
 import os.path
 
-argParser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-argParser.add_argument("input_file", metavar="input-file", nargs="+", help="the raw ELAN Traditional Transcript output")
-argParser.add_argument("-e", '--explicit-start', action="store_true", help="parse inputfile for nonstandard [[ signifier of new overlap block")
-argParser.add_argument("-o", '--output-pattern', default="[INPUT-FILE]-indented[INPUT-EXTENSION]", help="filename format for the output indented files")
-args = argParser.parse_args()
-
 
 class ElanParser:
     
@@ -30,7 +24,7 @@ class ElanParser:
             lineContainedOverlap = False
             for charpos, character in enumerate(line):
                 if character == '[':
-                    print('Found new overlap at line {} pos {}'.format(linno, charpos))
+                    verbosePrint('Found new overlap at line {} pos {}'.format(linno, charpos))
                     newLine = self.handleOverlap(newLine, charpos+self.additionalOffset)
                     lineContainedOverlap = True
             if lineContainedOverlap:
@@ -66,22 +60,22 @@ class ElanParser:
 
 class SimpleElanParser(ElanParser):
     def handleOverlap(self, line, charpos):
-        print(self.linesSinceOverlap)
+        verbosePrint(self.linesSinceOverlap)
         if self.linesSinceOverlap > 0:
-            print("Reseting overlaps...")
+            verbosePrint("Reseting overlaps...")
             self.overlapItems = defaultdict(int)
             self.linesSinceOverlap = 0
         newLine = line
         adjustedCharpos = charpos - 1 # I forget why this is necessary
         self.currentOverlapIndex = self.scanStringForDigit(line[charpos + 1:]) or 0
-        print("Working on {} index".format(self.currentOverlapIndex))
+        verbosePrint("Working on {} index".format(self.currentOverlapIndex))
         if not self.overlapItems[self.currentOverlapIndex]:
             # Assuming this is an entirely new block. Start a new reference position.
             self.overlapItems[self.currentOverlapIndex] = adjustedCharpos
-            print('\tDoing new block. Next will start at char {}'.format(self.overlapItems[self.currentOverlapIndex]))
+            verbosePrint('\tDoing new block. Next will start at char {}'.format(self.overlapItems[self.currentOverlapIndex]))
         else:
             newLine = newLine[:adjustedCharpos] + ' ' * (self.overlapItems[self.currentOverlapIndex] - (adjustedCharpos)) + newLine[adjustedCharpos:] # The -1 here accounts for the eventual removal of the double [[
-            print('\tAdding position offset {}'.format(self.overlapItems[self.currentOverlapIndex] - (adjustedCharpos)))
+            verbosePrint('\tAdding position offset {}'.format(self.overlapItems[self.currentOverlapIndex] - (adjustedCharpos)))
             self.additionalOffset += (self.overlapItems[self.currentOverlapIndex] - (adjustedCharpos))
         return newLine
 
@@ -97,24 +91,39 @@ class MarkedElanParser(ElanParser):
             self.currentOverlapIndex = self.scanStringForDigit(line[charpos + 2:]) or 0
             # This is an entirely new block. Start a new reference position.
             self.overlapItems[self.currentOverlapIndex] = adjustedCharpos - self.newOverlapsInLine # This takes into account the additional offset caused by previous offset actions in this line (multiple overlaps per IU), caused by the eventual removal of the double [[]]
-            print('\tDoing new block. Next will start at char {}'.format(self.overlapItems[self.currentOverlapIndex]))
+            verbosePrint('\tDoing new block. Next will start at char {}'.format(self.overlapItems[self.currentOverlapIndex]))
             self.newOverlapsInLine += 1
         else: 
             self.currentOverlapIndex = self.scanStringForDigit(line[charpos + 1:]) or 0
             newLine = newLine[:adjustedCharpos] + ' ' * (self.overlapItems[self.currentOverlapIndex] - (adjustedCharpos)) + newLine[adjustedCharpos:] # The -1 here accounts for the eventual removal of the double [[
-            print('\tAdding position offset {}'.format(self.overlapItems[self.currentOverlapIndex] - (adjustedCharpos)))
+            verbosePrint('\tAdding position offset {}'.format(self.overlapItems[self.currentOverlapIndex] - (adjustedCharpos)))
             self.additionalOffset += (self.overlapItems[self.currentOverlapIndex] - (adjustedCharpos))
         return newLine
 
     def cleanNewLine(self, line):
         return line.replace('[[', '[')
 
+# Begin runtime stuff
+# Handle arguments
+argParser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+argParser.add_argument("input_file", metavar="input-file", nargs="+", help="the raw ELAN Traditional Transcript output")
+argParser.add_argument("-e", '--explicit-start', action="store_true", help="parse inputfile for nonstandard [[ signifier of new overlap block")
+argParser.add_argument("-o", '--output-pattern', default="[INPUT-FILE]-indented[INPUT-EXTENSION]", help="filename format for the output indented files")
+argParser.add_argument("-v", '--verbose', action="store_true", help="output additional messages (primarily for debugging, useless in general)")
+args = argParser.parse_args()
 
 if args.explicit_start:
     elanParser = MarkedElanParser
 else:
     elanParser = SimpleElanParser
 
+if args.verbose:
+    def verbosePrint(msg):
+        print(msg)
+else:
+    verbosePrint = lambda *a: None
+
+# Iterate over list of files, parse each one, and write indented file
 for argFilename in args.input_file:
     with open(argFilename, 'r') as inTranFile:
         currentElanParser = elanParser(inTranFile)
