@@ -2,6 +2,22 @@ elan-overlapper
 ===============
 Quick auto-indent script for overlap for use with Du Bois (2015)'s discourse transcription conventions
 
+Sample output
+-------------
+
+The goal is to turn text like this:
+
+```
+SPEAKER1;    Oh [are] we about to [2overlap]?
+SPEAKER2;    [whoa, it] is [2overlap]
+```
+
+into text like this:
+
+```
+SPEAKER1;    Oh [are] we about to [2overlap]?
+SPEAKER2;       [whoa, it] is     [2overlap]
+```
 Getting started
 ---------------
 
@@ -16,7 +32,7 @@ Elan Overlapper assumes that export files are in plaintext of the sort generated
 
 ```
 SPEAKER1;    Oh [are] we about to [2overlap]?
-SPEAKER2;    [le]t's [2overlap]
+SPEAKER2;    [whoa, it] is [2overlap]
 ```
 
 Here, the number (or lack of number) is an index; [are] overlaps with [le]ts, and [overlap] with [overlap].
