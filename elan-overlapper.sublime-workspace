@@ -1,0 +1,790 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fprintf",
+				"fprintf\tfprintf …"
+			],
+			[
+				"f",
+				"fprintf\tfprintf …"
+			],
+			[
+				"byte",
+				"bytearray\tclass"
+			],
+			[
+				"write",
+				"writeCleanFileToolbox\tfunction"
+			],
+			[
+				"Toolbo",
+				"ToolboxReader"
+			],
+			[
+				"place",
+				"placeholderFields\tstatement"
+			],
+			[
+				"templat",
+				"templaticNumber"
+			],
+			[
+				"ml",
+				"mlObsNumRegexRepl\tstatement"
+			],
+			[
+				"ToolB",
+				"ToolboxReaderImproved\tclass"
+			],
+			[
+				"read",
+				"readline\tfunction"
+			],
+			[
+				"Find",
+				"FindAdhAndSisterClause"
+			],
+			[
+				"freqRe",
+				"freqRepairInNonPause"
+			],
+			[
+				"sore",
+				"sortedWordFreqs\tstatement"
+			],
+			[
+				"md5",
+				"md5_file〔function〕"
+			],
+			[
+				"str_replace",
+				"str_replace"
+			],
+			[
+				"strstr",
+				"strstr〔function〕"
+			],
+			[
+				"from",
+				"fromstring\tfunction"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "python/elan-overlapper.py",
+			"settings":
+			{
+				"buffer_size": 6239,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cpp/elan-overlapper.c",
+			"settings":
+			{
+				"buffer_size": 125,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "We keep track of attendance \n\nGrading scheme:\n20% Section participation\n20% Homework\n20% Midterm (Oct 19) (MC)\n40% Final (MC; cumulative)\n\nMonday Oct 17: Midterm review\n\nExamining animal communication from the lens of evolutionary biology\n\n[Handicap principle]\nAny communication system is on average going to be honest if it's the result of a naturally-evolved biological system\n* Communication systems can tolerate a bit of dishonesty, but if the signal is on average dishonest it will cease to have function (no one will, then, use the signal)\n** In other words, we usually tell the truth because if the ontological value of our utterances were false CONSISTENTLY, the signal would not be accepted as intended\n[Cost of signals] basically, we want to do as much as possible for as little effort/loss as possible\n[Signal quality] \n* Deer example: stags that can be loud and deep in their calls scare away other deer (\"wow, that must be a big deer if I can hear it from here...\")\n** But this signal can be \"dishonest\"; a relatively small deer has evolved to be able to move the larynx far enough down to mimic the cry of a larger deer without being larger itself--exaggeration\n[Status/Punishment]\n* Sparrow example: also use dishonest signals in the form of ???, but sometimes when the lie is caught they are punished for it with deathhhhhhhhhhhhhhhh\n\n[Social Communication]\n* Eg: co-referrentiality: ascribing the same meaning to a signal (eg [taebl] == 'table') is quite sophisticated\n\n[Human Language]\nHuman adaptations for language (how language has shaped the body)\n\n[Week 1]\n[[2016-9-26]]\nIf we could hear pigeons/dogs talking, it would be quite boring because they'd just be saying \"hey\", e.g.\n\nImportant discussion questions:\n\"What is communication?\"\n\"Examples of human communication\"\n\"How did communication evolve?\"\n\"What is special about human language (if anything)?\"\n\n[Properties of human language]\n* Interchangeability: we can both send and receive messages\n* Feedback: we are aware of the message being sent\n* Prevarication: we often lie and talk nonsense\n* Displacement: we can talk about stuff that doesn't exist (unicorns)\n\n[Communication] provision of information from a sender to a receiver\n* The information must be useful for the receiver--which is beneficial for all parties involved\n** Eg, speaking to someone who doesn't understand the language in which the message is encoded is pointless: it can't alter (per se) the behavior of the receiver and the sender has no benefit from this interaction (or lack thereof)\n** On average, communication helps both parties. There can be exceptions, but they must be *exceptions*\n\n[Signal] \n* (Saussure) signal content (signified), signal design (signifier)\nTypes of encodings: visual, olfactory, sound, touch, electrical\n~ When insects didn't have eyes, flowers didn't have colors (there's no point)\n\n[[2016-9-28]]\n[Signal] is the medium through which communication happens. The sender sends a signal to the receiver and information is contained in that signal. \n[[Signal content]] (signified)\n[[Signal design]] (signifier)\n\nSignal has three properties: (Fermin wants them to know this)\n1) alters the behavior of other organisms.\n2) has evolved for that precise effect (so NOT a [cue]).\n3) Is effective because the receiver also evolved to understand the signal.\nIf something is missing one of these properties, it is not a signal.\nIn general, the receiver must benefit from changing its behavior to favor the emitter.\nCoercion is not signal. Coercion is NOT a change in behavior, but behaving FOR someone.\n\nPurposeful evolution: there is a specific purpose for this signal having been evolved.\nApple emitting ethylene: not a signal meaning \"don't eat me\".\n\"Fighting for reproductive rights\" of deer... not women.\n \t\nSignals in animal world, again, tend to be honest.\n\n\n[Explanation for signal reliability]\n[Handicap principle] Signals are honest because they are costly.\n[[Efficacy cost]] The cost of emitting the signal itself\n[[Strategic cost]] The cost of maintaining honesty\n\nIn human larynx, you can't breathe and eat at hthe same time. Humans have evolved to have a low larynx. This allows us to speak, but also opens us up to choking.\n\n[Common interest] if sender and receiver have a common interest, the signal will likely remain honest. F oor example, the spiders might want to signal their size honestly because they both want to avoid a fight.\n[Quality indices] Signals whose strengths reflect the quality of interest and that are difficult to fake\nE.g. tiger territory signals--scratching the trunk of a tree as high as possible is hard to fake.\n[Reputation] Requires multiple interactions and memory\n\nHow does signaling get started?\nRitualized intention movements?\n[Icon] a signifier resembles the signified. Opposite of arbitrary. Talk about sound symbolism.\n[Mimicry] \n\n** Symbol that doesn't have an efficacy cost. Sparrow black spto (seniority?) doesn't really cost anything. But there is a strategic cost (if it's bigger than it should be, I may be killed)\n[Mullerian mimicry] honest mimicry like bees and wasps. Animals that have bright colors maybe taste horrible--don't eat me because I'm awful. This is mutually beneficial information exchange (I don't want to be eaten, and also you wouldn't like my flavor anyway).\n[Batesian mimicry] Dishonest mimicry (flies and wasps). \neg: eastern coral snake and scarlet king snake\n\n[Courtship]\nMale puts up very elaborate display because the female puts in a lot of time and wants to know that sperm will be worth it.\nBut seahorses: you would expect females to put on the display instead. And it does increase, but males in equal raising relationships still do put on more effort. This is probably because eggs are more expensive biologically than sperm.\n\"Our children are gonna kick ass because look how big I am.\"\nHandicaps: light a cigar with a $100 bill because they can.\n\"Sexy children\" is a runaway process. For example, eyestalks are... useless. It doesn't really indicate any fitness for reproduction but now has come to be used as a symbol for such.\n\n\n**2016-10-3**\n[Signaling equilibrium]--it is an equilibrium because the signal remains\nOnly happens when there is honesty\n\nThe lower the quality of the individual, the harder the signal is to produce\n\nWe look for [Evolutionary Stable Strategies], meaning a trait doesn't disappear (even if it's not the most beneficial)\n\n[Nash equilibrium] = some state of affairs that maximizes the benefit for all involved (but this is not what we care about)\n\nThe louder a chick begs, the more likely the parent is to give food to it. But it's more costly for a starving chicken to sing loudly.\n\n[Philip Sidney Game] \nSignaler can be \n    needy (1 - a) (probability of survival)\n    healthy (1 - b)\n    c is cost of signal, and this must be factored in if the signal is made\nReceiver\n    1 - d (cost of responding)\nrelatedness--inclusive fitness (ability for fitness of group), including maximizing the copies of a particular gene\n\nA signaling equilibrium is only reached when the signaler on signals when in need and when the responder only transfers the resource in response to a signal\n\nHandicap principle means cheating is possible but expensive\n\nCannot have one unless costly strategically (NOT just efficaciously). Strategic cost must be above and beyond what is required--it just ensures that the system remains honest. Index doesn't have strategic cost because it can't be cheated.\n\n**2016-10-5**\nRefinements to [Philip Sidney Game]: moving away from discrete model\n! Cost/benefit ratio of signal is higher for individuals giving stronger signals. For the system to work, the cost/benefit must be unevenly distributed--it must be unfair.\nThe presence of common interest (r) makes costless signalling possible. If both individuals are interested in not lying, there's no benefit in lying. If there's no advantage in lying, then there needs to be no cost. \n\n[Pooling equilibrium] (Bergstrom & Lachmann 1998)--probably not true. \nAssume that degree of hunger of a chick is continuous. \nThe cost of giving food varies for parents.\nThere is genetic relatedness and inclusive fitness.\nThe chick can signal or not signal: \nOr a finite number of signaling states (pools, might be induced by error)\n\nSeveral possibilities:\n* Both chick and parent benefit from feeding\n* Neither the chick nor parent benefit from feeding.\n* CONFLICT: The chick benefits from being fed, but for the parent, it would be best not to feed.\n\nIn this scenario, ESS is that:\n* Chicks signal only when above a certain level of hunger (threshold).\n* The parent only knows (and responds to) the average level of hunger.\n\nThis causes situations that feeding happens when not really necessary, or when feeding does not happen because necessary.\nBut no strategic cost is necessary in this model. \n\nHowever, a little genetic change could cause a variability in the intensity of the signals, we go back to the Philip Sidney game. Becomes evolutionarily unstable.\n\n[Non-signaling equilibrium] System with no communication. Parent always gives food or never gives food.\n\n!!!!!!!!!! What was initially a cue can become a signal: bearing of teeth in wolves beginning as initiation of an attack, but once the signal is observed immediately, it came to be associated as an indication of attack. Is this like ODP?\n\n**2016-10-12**\nSystems where reputation might matter or punishment might be in place without [punishment].\n[Common interest] or in un[related] individuals.\nFruit fly mating: a female mates only once, so a female signals a male \"leave me alone\" if they've already done it. \"There's no way you're going to get in there.\"\n\n**2016-10-17**\nExam will be on October 26. Review is on October 24.\n\nHow can indices evolve? \n[Indices] are [signals] reflecting the quality of the individual. If you're very fit, it's good for you to send out a signal (and a LACK of signal might mean a lack of quality.)\nIf I'm a low-quality individual, signaling would put me at a disadvantage--if we're using indices.\nShirt off example--regardless of state of muscles, not taking a shirt off says that I am maximally weak.\nLow F0 correlated with large larynx. But, humans can lower the larynx and extend the vocal tract.\nThe correllation fails with humans. So, looking at the formant dispersion is a pretty good indicator of size.\nF0 can be faked, but formant dispersion can not be--yet.\nHuman eating--lower larynx = higher chance of death (only we can choke to death)\n\nDeer example:\nInitially, had a cue--how big or small deer is. \nOver time, deer realized that bigger deer sounded \"big\".\nGrade inflation is now an unreliable signal.\n\n**2016-10-31**\nStereotypy: It gets a standard form that often exaggerates some aspect of it\n\nConspicuousness: the signals are more \"noticable\" than cues\nRedundancy: a particular signal can have many associated media with it\nStereotypy: remarkably little variation in form of signal, making deviations more obvious\nAlerting components: correlated with ... ?\n\nTwo types of cues:\nPhysiological: things an animal IS\nBehavioral: things an animal DOES\n[Basal property] something that has evolved very early\nIntention movements (about to punch, about to bite)\nProtective movements (rolling up sleeves, lowering of ear in dog)\n[Displacement] is signal that is totally out of place and completely unnecessary--like scratching the head for confusion, or the preening of the ladybug (?)\n",
+			"file": "/home/cbrendel/Dropbox/UCSB/2016 Fall/LING186_AnComm/ta_notes.txt",
+			"file_size": 11312,
+			"file_write_time": 131224238886659424,
+			"settings":
+			{
+				"buffer_size": 11431,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 232.0,
+		"last_filter": "html",
+		"selected_items":
+		[
+			[
+				"html",
+				"Export to HTML: Show Export Menu"
+			],
+			[
+				"export",
+				"Export to HTML: Show Export Menu"
+			],
+			[
+				"Packa",
+				"Package Control: Disable Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Namespace"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"python",
+				"SublimeREPL: Python"
+			],
+			[
+				"RPL",
+				"SublimeREPL: Python - Sublime Text Console"
+			],
+			[
+				"Repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"r",
+				"SublimeREPL: R"
+			],
+			[
+				"repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: Remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"Python",
+				"Anaconda: Set Python interpreter"
+			],
+			[
+				"Anaconda",
+				"Anaconda: Set Python interpreter"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"view.encoding()",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/cbrendel/git/elan-overlapper",
+		"/home/cbrendel/git/elan-overlapper/cpp",
+		"/home/cbrendel/git/elan-overlapper/cpp/classes",
+		"/home/cbrendel/git/elan-overlapper/python"
+	],
+	"file_history":
+	[
+		"/home/cbrendel/git/elan-overlapper/cpp/classes/ElanParser.c",
+		"/home/cbrendel/git/elan-overlapper/elan-overlapper.sublime-project",
+		"/home/cbrendel/Dropbox/JCH Local/python/ToolboxReader.py",
+		"/home/cbrendel/Desktop/test.html",
+		"/home/cbrendel/test.txt",
+		"/home/cbrendel/Dropbox/UCSB/2016 Fall/LING186_AnComm/ta_notes.txt",
+		"/home/cbrendel/git/elan-overlapper/python/elan-overlapper.py",
+		"/home/cbrendel/Dropbox/UCSB/2016 Fall/LING212_DT/drag_stories/minute3-level3-example.txt",
+		"/home/cbrendel/Desktop/minute3_level3.html",
+		"/home/cbrendel/git/elan-overlapper/minutes3-level3-example-indented.txt",
+		"/home/cbrendel/.config/sublime-text-3/Packages/User/ExportHtml.sublime-settings",
+		"/home/cbrendel/packages/source/simple-resume-cv/simpleresumecv.cls",
+		"/home/cbrendel/Dropbox/UCSB/2016 Fall/LING212_DT/drag_stories/Brendel_minute2-level2.txt",
+		"/home/cbrendel/packages/source/simple-resume-cv/CV.tex",
+		"/home/cbrendel/Dropbox/UCSB/2016 Fall/LING252A_Tone/BrendelChris_Swedish_presentation.bib",
+		"/home/cbrendel/Desktop/tmpdr2e7d.html",
+		"/home/cbrendel/Dropbox/UCSB/2016 Fall/LING212_DT/drag_stories/minutes3-level3-example.txt",
+		"/home/cbrendel/Dropbox/UCSB/2016 Fall/LING212_DT/drag_stories/minutes1_3-level3.txt",
+		"/home/cbrendel/packages/source/simple-resume-cv/README.md",
+		"/home/cbrendel/.config/sublime-text-3/Packages/ExportHtml/ExportHtml.sublime-settings",
+		"/home/cbrendel/Downloads/client1.ovpn",
+		"/home/cbrendel/Dropbox/UCSB/wechat/非卡尔人勿扰.txt",
+		"/home/cbrendel/Dropbox/UCSB/2016 Fall/LING261_SyntaxBeyondClause/notes.txt",
+		"/home/cbrendel/Documents/keys/artrage_for_matterhorn.crt",
+		"/home/cbrendel/Documents/keys/artrage_for_matterhorn.key",
+		"/home/cbrendel/Dropbox/UCSB/2016 Fall/LING212_DT/notes.txt",
+		"/home/cbrendel/Dropbox/UCSB/2016 Fall/LING212_DT/drag_stories/minute1-level1.html",
+		"/home/cbrendel/Dropbox/UCSB/2016 Fall/LING212_DT/drag_stories/minute1-level1.txt",
+		"/run/media/cbrendel/LingLib 2.2.2003/script/structured.php",
+		"/run/media/cbrendel/LingLib 2.2.2003/README",
+		"/run/media/cbrendel/LingLib 2.2.2003/LingLibParse.java",
+		"/run/media/cbrendel/LingLib 2.2.2003/script/linglibQuery.html",
+		"/run/media/cbrendel/LingLib 2.2.2003/script/index.html",
+		"/run/media/cbrendel/LingLib 2.2.2003/script/getrecord.php",
+		"/run/media/cbrendel/LingLib 2.2.2003/script/freetext.php",
+		"/home/cbrendel/.cache/.fr-1fX2Ps/README-merlin.txt",
+		"/home/cbrendel/Desktop/test_wechat.py",
+		"/home/cbrendel/Dropbox/UCSB/Icelandic/icepahc-v0.9/txt/1150.homiliubok.rel-ser.txt",
+		"/home/cbrendel/Dropbox/UCSB/Icelandic/icepahc-v0.9/psd/1150.homiliubok.rel-ser.psd",
+		"/home/cbrendel/Dropbox/UCSB/Icelandic/icepahc-v0.9/tagged/1150.homiliubok.rel-ser.tagged",
+		"/home/cbrendel/.config/sublime-text-3/Installed Packages/Package Control.sublime-package",
+		"/home/cbrendel/Dropbox/UCSB/2016 Fall/DT/drag_stories/minute1-level1.txt",
+		"/home/cbrendel/Dropbox/UCSB/2016 Fall/DT/notes.txt",
+		"/home/cbrendel/Desktop/wechat.html",
+		"/home/cbrendel/Dropbox/UCSB/2016 Fall/AnComm/add_emilia",
+		"/home/cbrendel/Dropbox/UCSB/2016 Fall/AnComm/ta_notes.txt",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Preferencias/Spanish.lng",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Preferencias/bitacora2.typ",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Preferencias/bitacora.typ",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Preferencias/lexicon.typ",
+		"/home/cbrendel/Dropbox/JCH Local/python/J-SU_CLEAN.DB",
+		"/home/cbrendel/Dropbox/JCH Local/python/J-GR_CLEAN.DB",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/J-GR.DB",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/J-M1.DB",
+		"/home/cbrendel/Downloads/5033.aud",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Preferencias/Juchitec.lng",
+		"/home/cbrendel/Dropbox/JCH Local/python/J-AN_CLEAN.DB",
+		"/home/cbrendel/Dropbox/JCH Local/J-AN.DB",
+		"/home/cbrendel/Dropbox/JCH Local/python/J-FE_CLEAN.DB",
+		"/home/cbrendel/Dropbox/JCH Local/python/J-SS_CLEAN.DB",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/J-SS.DB",
+		"/home/cbrendel/Dropbox/JCH Local/python/J-NU_CLEAN.DB",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/J-EM",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/J-NU.DB",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Preferencias/J-MACRO.REC",
+		"/home/cbrendel/Dropbox/JCH Local/python/J-EM_CLEAN.DB",
+		"/home/cbrendel/Dropbox/JCH Local/python/cleanDatabase.py",
+		"/home/cbrendel/Dropbox/UCSB/Icelandic/compute-ice.py",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Preferencias/Default.lng",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/grabaciones",
+		"/home/cbrendel/Dropbox/JCH Local/python/corrupted_non_unicode.py",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/J-LOAN.DB",
+		"/home/cbrendel/Dropbox/JCH Local/python/encodings.py",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Preferencias/Sapoteko.lng",
+		"/home/cbrendel/Dropbox/JCH Local/python/J-GE_CLEAN.DB",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/J-AN.DB",
+		"/home/cbrendel/Dropbox/JCH Local/python/J-LOAN_CLEAN.DB",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/J-NN.DB",
+		"/home/cbrendel/Dropbox/JCH Working Master/Datos/J-M2.DB",
+		"/home/cbrendel/Dropbox/JCH Working Master/Datos/J-NN.DB",
+		"/home/cbrendel/Dropbox/JCH Local/python/rando_test.py",
+		"/home/cbrendel/Dropbox/JCH Local/python/helloword.cpp",
+		"/home/cbrendel/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/cbrendel/.config/sublime-text-3/Packages/User/C++11.sublime-settings",
+		"/home/cbrendel/.config/sublime-text-3/Packages/User/C++.sublime-settings",
+		"/home/cbrendel/.config/sublime-text-3/Packages/C++11/messages/install.txt",
+		"/home/cbrendel/Dropbox/JCH Local/python/testfile.txt",
+		"/home/cbrendel/Dropbox/JCH Local/python/gabriela_notes.txt",
+		"/home/cbrendel/Desktop/test.txt",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/DBs to Process/J-SS.DB",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/J-PL.DB",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/removed_bytes/J-GR.DB",
+		"/home/cbrendel/Dropbox/JCH Local/python/quicksort.py",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/J-M2.BAK",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/J-M2.DB",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/J-M2_RESAVED.DB",
+		"/home/cbrendel/Dropbox/JCH Local/python/wtf.txt",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/removed_bytes/J-M2.DB.removed_bytes",
+		"/home/cbrendel/.config/sublime-text-3/Packages/User/Python.sublime-settings",
+		"/home/cbrendel/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+		"/home/cbrendel/Downloads/BAT000-015_VC.eaf",
+		"/home/cbrendel/Desktop/ToolboxReader.py",
+		"/home/cbrendel/Desktop/cleanDb.py",
+		"/home/cbrendel/Downloads/unspecified",
+		"/home/cbrendel/.cache/.fr-uhQF3U/INSTALL.txt",
+		"/home/cbrendel/.config/sublime-text-3/Packages/Color Scheme - Default/Monokai.tmTheme",
+		"/home/cbrendel/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/cbrendel/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/cbrendel/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/cbrendel/.config/sublime-text-3/Packages/PackageResourceViewer/README.md",
+		"/home/cbrendel/.config/sublime-text-3/Cache/Theme - Default/Widgets.stTheme.cache",
+		"/home/cbrendel/.config/sublime-text-3/Cache/Color Scheme - Default/Monokai.tmTheme.cache",
+		"/home/cbrendel/.config/sublime-text-3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/home/cbrendel/.config/sublime-text-3/Packages/User/tets.php",
+		"/home/cbrendel/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+		"/home/cbrendel/.config/sublime-text-3/Packages/Anaconda/README.md",
+		"/home/cbrendel/.config/sublime-text-3/Packages/User/PHP.sublime-settings",
+		"/home/cbrendel/.config/sublime-text-3/Packages/User/JSON.sublime-settings",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/J-M1_SANE.DB",
+		"/home/cbrendel/Dropbox/JCH Local/python/output.txt",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/J-M1_RESAVED.DB",
+		"/home/cbrendel/Dropbox/JCH Working Master/Datos/J-M2_CLEAN.DB",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/DBs to Process/J-AN.DB",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/DBs to Process/J-LOAN.DB",
+		"/home/cbrendel/Dropbox/JCH/dictionary_fields.txt",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/DBs to Process/J-DI",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/J-BP2.DB",
+		"/home/cbrendel/Dropbox/JCH Local/JCH Local Copy/Datos/DBs to Process/J-BP2b.DB"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"[sk",
+			"print",
+			"arm",
+			", \\d",
+			"cost",
+			"minimal",
+			"\\n",
+			"\\n+",
+			"\\n",
+			"\\n+",
+			"\\n",
+			"\\n+",
+			"cue",
+			"^(\\w+)(?= )",
+			"NATE",
+			"^(\\w+)(?= )",
+			"^(?<=\\w+)(?= )",
+			"^(?<=w+)(?= )",
+			"^\\(?<w+)(?= )",
+			"^\\(?<=w+)(?= )",
+			"\\d+K",
+			"symbol",
+			"\\n",
+			"\\n\\n",
+			"\\n",
+			"LanguageEnc",
+			"\\n\\n+",
+			"(?<=\\\\CMTSX )[^\\\\]*?\\\\[^\\\\]*?(?=\\\\date)",
+			"(?<!\\n)\\\\",
+			"\\",
+			"(?<=\\\\CULTX)(.|\\n)+?(?=\\\\CMTSX)",
+			"\\",
+			"(?<=\\\\CULTX)(.|\\n)+?(?=\\\\CMTSX)",
+			"\\",
+			"(?<=\\\\CULTX)(.|\\n)+?(?=\\\\CMTSX)",
+			"(?<=\\\\CULT[^\\n]+\\n)(.|\\n)+?(?=\\\\CMTSX)",
+			"(?<=\\\\CULT[^\\n]*\\n)(.|\\n)+?(?=\\\\CMTSX)",
+			"(?<=\\\\CULT[^\\n]\\n)(.|\\n)*?(?=\\\\CMTSX)",
+			"(?<=\\\\CULT[^\\n]\\n).*?(?=\\\\CMTSX)",
+			"(?<=\\\\CULT[^\\n]\\n).*?(?=\\n\\\\CMTSX)",
+			"(?<=\\\\CULT[^\\n]\\n).*?(?=\\\\CMTSX)",
+			"(?<=\\\\CULT[^\\n]\\n)(?=\\\\CMTSX)",
+			"(?<=\\\\CULT)",
+			"\\CULT",
+			"varxx",
+			"(?<!\\n)\\\\",
+			"(?<=\\\\CMTSX )[^\\\\]*?\\\\[^\\\\]*?(?=\\\\date)",
+			"(?<!\\n)\\\\",
+			"(?<=\\\\CMTSX )[^\\\\]*?\\\\[^\\\\]*?(?=\\\\date)",
+			"\\\\\\w+ N\\n",
+			"\\\\\\w+ N",
+			"\\\\XENXX[^\\\\\\n]+\\n\\n(?!(\\\\SYNXX)|(\\\\EXUX))",
+			"EXSXX",
+			"\\\\XENXX[^\\\\\\n]+\\n\\n(?!(\\\\SYNXX)|(\\\\EXUX))",
+			"synxx",
+			"\\\\XENXX[^\\\\\\n]+\\n\\n(?!(\\\\SYNXX)|(\\\\EXUX))",
+			"\\\\XENXX[^\\\\\\n]+\\n\\n",
+			"\\\\XENXX[^\\\\\\n]+",
+			"\\\\XENXX[^\\\\\\n]+\\n\\n(?!(\\\\EXUX|\\\\SYNXX)",
+			"EXSXX",
+			"xono*",
+			"SUXX",
+			"EXSXX",
+			"ciento",
+			"ti+ ga-ywaa",
+			"EXSXX",
+			"lexxx ti!7",
+			"gaxti!7 [JLC",
+			"\\\\XENXX[^\\\\]+\\n\\n(?!(\\\\SYNXX)|(\\\\EXUX)",
+			"EXSXX",
+			"gaxti!7 [JLC",
+			"SYNXX",
+			"EXSXX",
+			"XSPXX",
+			"EXSXX",
+			"XENXX",
+			"EXSXX",
+			"tres",
+			"dos",
+			"\\usexx",
+			"x.ti!",
+			" ti+ rra*tu wiini si*",
+			"EXSXX",
+			" o*ra",
+			"EXSXX",
+			"XSPXX",
+			"]\n\\XSPXX ellos",
+			"\n\\XSPXX e",
+			"\\XSPXX ",
+			"EXSXX",
+			"\n\\",
+			"EXSXX",
+			"XSPXX",
+			"\n\\",
+			"EXSXX",
+			"\n\\",
+			"EXSXX",
+			"\n\\",
+			"EXSXX",
+			"\n\\",
+			"EXSXX",
+			"\n\\",
+			"bu+ ri*7",
+			"EXSXX",
+			"\n\\EXSXX",
+			"\\EXSXX",
+			"EXSXX",
+			"lexx +ka*",
+			"+ka*",
+			"splxe",
+			"SPLXS",
+			"(?<=\\\\CMTSX )[^\\\\]*?\\\\[^\\\\]*?(?=\\\\date)",
+			"(?<!\\n)\\\\",
+			"(?<=\\\\CMTSX )[^\\\\]*?\\\\[^\\\\]*?(?=\\\\date)",
+			"\\lexXX test",
+			"test",
+			"¡",
+			"(?<=\\\\CMTSX )[^\\\\]*?\\\\[^\\\\]*?(?=\\\\date)",
+			"(?<!\\n)\\\\",
+			"n la misma hora [JLC]; esta misma hora [como se puso de acuerdo]",
+			"EXSXX",
+			"\n\\EXSXX",
+			"\\EXSXX",
+			"we*ba li!sa [JLC]",
+			"2 we*ba li!sa [JLC]",
+			"che!n",
+			"ta! [JLC",
+			"(?<!\\n)\\\\"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"verbosePrint",
+			", ",
+			"\\n",
+			", ",
+			"\\n",
+			", ",
+			"\\n",
+			"\\1;",
+			";",
+			"\\n\\n",
+			"\\n",
+			"\\n\\n",
+			" ",
+			"@",
+			"",
+			"\\\\\\1\\n",
+			"\\\\EXUX\\n\\1\\n\\\\XSPXX\\n\\\\XENXX\\n\\n",
+			"",
+			"    ",
+			"\\1\\3\\n\\1\\2",
+			"    '\\1',\\n",
+			"\\t'\\1',\\n",
+			"'\\1',\\n",
+			"'\\1', ",
+			"\\[\\1\\]",
+			"\\)\\n",
+			")\\n",
+			"\\1: \\2,\\n\\t",
+			"\\1: \\2,\\n",
+			"self.model",
+			"\\n    ",
+			"fieldValue",
+			"fieldKey",
+			"stringLine",
+			"",
+			"'\\1', ",
+			" ",
+			"",
+			" ",
+			"$2\\t\\t$1",
+			"\\2\\t\\t\\1",
+			"$2\\t\\t$1",
+			"-",
+			"",
+			"\\t\\t",
+			"\\n",
+			"",
+			"\\t\\t\\t",
+			"\\t",
+			"",
+			"\\n",
+			"",
+			"\\n",
+			"",
+			"results",
+			"Results",
+			" ",
+			"",
+			"Obj",
+			"Subj5",
+			"Obj",
+			"obj",
+			"\\t",
+			"",
+			", ",
+			"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "python/elan-overlapper.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2146,
+								2146
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "cpp/elan-overlapper.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								82,
+								82
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/cbrendel/Dropbox/UCSB/2016 Fall/LING186_AnComm/ta_notes.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11207,
+								11207
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3232.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 100.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "Packages/User/python2.sublime-build",
+	"project": "elan-overlapper.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"clean",
+				"~/Dropbox/JCH Local/python/cleanDatabase.py"
+			],
+			[
+				"toolbox",
+				"~/Dropbox/JCH Local/python/ToolboxReader.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 172.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 219.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -121,7 +121,8 @@ if args.verbose:
     def verbosePrint(msg):
         print(msg)
 else:
-    verbosePrint = lambda *a: None
+    def verbosePrint(msg):
+        None
 
 # Iterate over list of files, parse each one, and write indented file
 for argFilename in args.input_file:
