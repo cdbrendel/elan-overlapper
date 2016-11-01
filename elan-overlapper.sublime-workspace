@@ -101,7 +101,6 @@
 			"settings":
 			{
 				"buffer_size": 11431,
-				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -596,7 +595,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -626,7 +625,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -655,7 +654,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -671,8 +670,8 @@
 						"selection":
 						[
 							[
-								11207,
-								11207
+								10748,
+								10748
 							]
 						],
 						"settings":
@@ -680,10 +679,10 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 3232.0,
+						"translation.y": 3376.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

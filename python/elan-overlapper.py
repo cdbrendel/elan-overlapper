@@ -7,7 +7,7 @@ import os.path
 
 class ElanParser:
     
-    def __init__(self, transcriptFile):
+    def __init__(self, transcriptFile, spaced):
         self.transcriptFile = transcriptFile
         self.currentOverlapIndex = 0
         self.linesSinceOverlap = 0
@@ -15,9 +15,24 @@ class ElanParser:
         self.newLines = []
         self.additionalOffset = 0
         self.newOverlapsInLine = 0
+        # Hacky solution. If the line is blank, the first statement will fail.
+        if spaced:
+            verbosePrint('setting spaced')
+            self.skipWhite = self.assertIsEmptyLine
+        else:
+            self.skipWhite = lambda l: None
+
+    def assertIsEmptyLine(self, line):
+        assert line[0] != '\n'
 
     def GenerateIndentedText(self):
         for linno, line in enumerate(inTranFile):
+            try:
+                verbosePrint(self.skipWhite(line))
+            except:
+                verbosePrint("found blank")
+                self.newLines.append(line)
+                continue
             newLine = line
             self.additionalOffset = 0
             self.newOverlapsInLine = 0
@@ -109,6 +124,7 @@ argParser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHel
 argParser.add_argument("input_file", metavar="input-file", nargs="+", help="the raw ELAN Traditional Transcript output")
 argParser.add_argument("-e", '--explicit-start', action="store_true", help="parse inputfile for nonstandard [[ signifier of new overlap block")
 argParser.add_argument("-o", '--output-pattern', default="[INPUT-FILE]-indented[INPUT-EXTENSION]", help="filename format for the output indented files")
+argParser.add_argument("-s", '--spaced', action="store_true", help="Transcript file contains a blank space between IUs")
 argParser.add_argument("-v", '--verbose', action="store_true", help="output additional messages (primarily for debugging, useless in general)")
 args = argParser.parse_args()
 
@@ -127,6 +143,6 @@ else:
 # Iterate over list of files, parse each one, and write indented file
 for argFilename in args.input_file:
     with open(argFilename, 'r') as inTranFile:
-        currentElanParser = elanParser(inTranFile)
+        currentElanParser = elanParser(inTranFile, args.spaced)
         currentElanParser.GenerateIndentedText()
         currentElanParser.WriteNewFile(argFilename, args.output_pattern)
