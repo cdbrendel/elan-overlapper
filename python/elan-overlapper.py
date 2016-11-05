@@ -4,7 +4,7 @@ import argparse
 from sys import stderr
 import os.path
 import re
-
+from cgi import escape
 
 class ElanParser:
     
@@ -145,9 +145,9 @@ function getPosition(el) {{
                 parts = re.split(self.splitSpeakerContentRegex, self.cleanNewLine(line))
                 assert len(parts) <= 2, "Splitting by semicolon did not work."
                 try:
-                    outTranFile.write("<tr><td>{linno}</td><td class=\"speaker\">{speaker};</td><td class=\"utterance\">{utterance}</td></tr>\n".format(linno=linno + 1, speaker=parts[0], utterance=self.createSubscripts(parts[1].strip())))
+                    outTranFile.write("<tr><td>{linno}</td><td class=\"speaker\">{speaker};</td><td class=\"utterance\">{utterance}</td></tr>\n".format(linno=linno + 1, speaker=parts[0], utterance=self.createSubscripts(escape(parts[1].strip()))))
                 except:
-                    outTranFile.write("<tr><td>{linno}</td><td class=\"speaker\">&nbsp;</td><td class=\"utterance\">{utterance}</td></tr>\n".format(linno=linno + 1, utterance=self.createSubscripts(parts[0].strip())))
+                    outTranFile.write("<tr><td>{linno}</td><td class=\"speaker\">&nbsp;</td><td class=\"utterance\">{utterance}</td></tr>\n".format(linno=linno + 1, utterance=self.createSubscripts(escape(parts[0].strip()))))
             outTranFile.write("""
         </table>
     </body>
