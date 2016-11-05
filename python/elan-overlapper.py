@@ -140,14 +140,14 @@ function getPosition(el) {{
     <body>
         <table>
 """.format(title='Transcript ({})'.format(inTranFilename), fontfamily=args.font))
-            for line in self.newLines:
+            for linno, line in enumerate(self.newLines):
                 # Set up table format
                 parts = re.split(self.splitSpeakerContentRegex, self.cleanNewLine(line))
                 assert len(parts) <= 2, "Splitting by semicolon did not work."
                 try:
-                    outTranFile.write("<tr><td class=\"speaker\">{};</td><td class=\"utterance\">{}</td></tr>\n".format(parts[0], self.createSubscripts(parts[1].strip())))
+                    outTranFile.write("<tr><td>{linno}</td><td class=\"speaker\">{speaker};</td><td class=\"utterance\">{utterance}</td></tr>\n".format(linno=linno + 1, speaker=parts[0], utterance=self.createSubscripts(parts[1].strip())))
                 except:
-                    outTranFile.write("<tr><td class=\"speaker\">&nbsp;</td><td class=\"utterance\">{}</td></tr>\n".format(self.createSubscripts(parts[0].strip())))
+                    outTranFile.write("<tr><td>{linno}</td><td class=\"speaker\">&nbsp;</td><td class=\"utterance\">{utterance}</td></tr>\n".format(linno=linno + 1, utterance=self.createSubscripts(parts[0].strip())))
             outTranFile.write("""
         </table>
     </body>
