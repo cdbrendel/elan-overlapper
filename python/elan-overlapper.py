@@ -16,7 +16,7 @@ class ElanParser:
         self.newLines = []
         self.additionalOffset = 0
         self.newOverlapsInLine = 0
-        self.subscriptRegex = re.compile(r'\[(\d)')
+        self.subscriptRegex = re.compile(r'\[(\d?)')
         self.splitSpeakerContentRegex = re.compile(r';\s*')
 
         # Hacky solution. If the line is blank, the first statement will fail.
